@@ -1,5 +1,5 @@
 diff --git a/node_modules/react-dev-utils/webpackHotDevClient.js b/node_modules/react-dev-utils/webpackHotDevClient.js
-index fb515f0..d7c67c9 100644
+index fb515f0..9513f4f 100644
 --- a/node_modules/react-dev-utils/webpackHotDevClient.js
 +++ b/node_modules/react-dev-utils/webpackHotDevClient.js
 @@ -59,7 +59,7 @@ if (module.hot && typeof module.hot.dispose === 'function') {
@@ -7,7 +7,7 @@ index fb515f0..d7c67c9 100644
  var connection = new WebSocket(
    url.format({
 -    protocol: 'ws',
-+    protocol: 'https:' ? 'wss' : 'ws'',
++    protocol: 'https:' ? 'wss' : 'ws',
      hostname: window.location.hostname,
      port: window.location.port,
      // Hardcoded in WebpackDevServer
