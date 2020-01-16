@@ -1,3 +1,3 @@
-const loginContainer = {
+export const loginContainer = {
     display: 'flex',
 }

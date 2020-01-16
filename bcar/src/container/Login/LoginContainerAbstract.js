@@ -15,4 +15,4 @@ class LoginContainerAbstract extends React.PureComponent {
     }
 }
 
-export default LoginContainer
+export default LoginContainerAbstract
