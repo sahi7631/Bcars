@@ -7,6 +7,7 @@ import {
 import App from './App';
 import About from './container/About';
 import Login from './container/Login';
+import Contact from './container/Contact';
 
 const AppRouter = () => {
     return (
@@ -17,6 +18,9 @@ const AppRouter = () => {
                 </Route>
                 <Route path="/about">
                     <About />
+                </Route>
+                <Route path="/contact">
+                  <Contact/>
                 </Route>
                 <Route exact path="/login">
                     <Login />

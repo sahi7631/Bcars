@@ -2,6 +2,7 @@ import React from 'react';
 import { Input, Button, Icon } from 'antd';
 import { loginContainer } from './style';
 import Header from '../Header';
+import Footer from '../Footer';
 
 class LoginContainer extends React.Component {
     constructor(props) {
@@ -33,6 +34,7 @@ class LoginContainer extends React.Component {
                         </div>
                     </div>
                 </div>
+                <Footer/>
             </div>
         )
     }
