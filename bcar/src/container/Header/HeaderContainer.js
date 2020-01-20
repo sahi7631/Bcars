@@ -23,11 +23,11 @@ class HeaderContainer extends HeaderContainerAbstract {
                         <div class="collapse navbar-collapse" id="myNavbar">
                             <ul class="nav navbar-nav navbar-right">
                                 <li><a href="/">HOME</a></li>
-                                <li><Link to="/about">ABOUT</Link></li>
-                                <li><a href="/tour">RENT YOUR CAR</a></li>
-                                <li><Link to="/contact">CONTACT</Link></li>
-                                <li><Link to="/login">LOGIN</Link></li>
-                                <li><a href="/signup">SIGNUP</a></li>
+                                {/* <li><Link to="/about">ABOUT</Link></li> */}
+                                <li><a href="/earnwithus">EARN WITH US</a></li>
+                                <li><Link to="/offers">OFFERS</Link></li>
+                                <li><Link to="/mobileapp">MOBILE APP</Link></li>
+                                <li><a href="/login">LOGIN</a></li>
                             </ul>
                         </div>
                     </div>

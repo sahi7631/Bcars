@@ -2,69 +2,51 @@ import React from 'react';
 import SearchContainerAbstract from './SeachContainerAbsract';
 import Dpicker from '../../component/DatePickerComponent';
 import PlacesAutocomplete from 'react-places-autocomplete';
-import { Button ,DatePicker, Input} from 'antd';
+import { Button, DatePicker, Icon } from 'antd';
+import { Select } from 'antd';
+const { Option } = Select;
 
 class SearchContainer extends SearchContainerAbstract {
     constructor(props) {
         super(props);
     }
+
+    handleChange = (value) => {
+        console.log(`selected ${value}`);
+    }
+
     render() {
         return (
-            <div style={{ display: 'flex', justifyContent: 'center', marginTop: '130px' }}>
-                <div style={{ border: '2px solid green', borderRadius: '5px', height: '50px', padding: '10px', width: '70%' }}>
-                    <div style={{ display: 'flex', flexDirection: 'row', alignItems: 'flex-start' }}>
-                        <div style = {{ width: '30%'}}>
-                            <PlacesAutocomplete
-                                value={this.state.address}
-                                onChange={this.handleChange}
-                                onSelect={this.handleSelect}
-                            >
-                                {({ getInputProps, suggestions, getSuggestionItemProps, loading }) => (
-                                    <div>
-                                        <Input
-                                            {...getInputProps({
-                                                placeholder: 'Search City ...',
-                                                className: 'location-search-input',
-                                            })}
-                                        />
-                                        <div className="autocomplete-dropdown-container" style={{ height: '60px' }}>
-                                            {loading && <div>Loading...</div>}
-                                            {suggestions.map(suggestion => {
-                                                const className = suggestion.active
-                                                    ? 'suggestion-item--active'
-                                                    : 'suggestion-item';
-                                                const style = suggestion.active
-                                                    ? { backgroundColor: '#fafafa', cursor: 'pointer' }
-                                                    : { backgroundColor: '#ffffff', cursor: 'pointer' };
-                                                return (
-                                                    <div
-                                                        {...getSuggestionItemProps(suggestion, {
-                                                            className,
-                                                            style,
-                                                        })}
-                                                    >
-                                                        <span>{suggestion.description}</span>
-                                                    </div>
-                                                );
-                                            })}
-                                        </div>
-                                    </div>
-                                )}
-                            </PlacesAutocomplete>
-                        </div>
-                        <div style = {{ width: '30%'}}>
-                            <DatePicker onChange={this.onChange}  showTime  placeholder="Start Date & Time"/>
-                        </div>
-                        <div style = {{ width: '30%'}}>
-                            <DatePicker onChange={this.onChange}  showTime placeholder="End Date & Time"/>
-                        </div>
-                        <div style = {{ width: '10%'}}>
-                            <Button type="primary" shape="circle" icon="search" />
+            <React.Fragment style = {{ backgroundColor: '#eee'}}>
+                <div style={{display: 'flex', justifyContent: 'flex-start', marginTop: '30px'}}>
+                    <div>
+                        <Select defaultValue="Jaipur" style={{ width: 100 }} onChange={this.handleChange}>
+                            <Option value="Jaipur">Jaipur</Option>
+                        </Select>
+                    </div>
+                    <div style = {{ margin: 'auto'}}>
+                        <h1>Welcome to  Triping</h1>
+                    </div>
+                </div>
+                <div style={{ display: 'flex', justifyContent: 'space-around', marginTop: '50px'}}>
+                    <div style={{ height: '70px', display: 'flex', justifyContent: 'space-around', padding: '10px', width: '100%' }}>
+                        <div style={{ display: 'flex', flexDirection: 'row', }}>
+                            <div style={{ width: '40%' }}>
+                                <DatePicker onChange={this.onChange} size="large" showTime placeholder="Start Date & Time" />
+                            </div>
+                            <div style={{ width: '40%' }}>
+                                <DatePicker onChange={this.onChange} size="large" showTime placeholder="End Date & Time" />
+                            </div>
+                            <div style={{ width: '10%' }}>
+                                <Button type="primary" size="large" >
+                                    Search
+                                <Icon type="arrow-right" />
+                                </Button>
+                            </div>
                         </div>
                     </div>
-
                 </div>
-            </div>
+            </React.Fragment>
         )
     }
 }

@@ -9,10 +9,10 @@
   }
   
   .App-header {
-    height: 180px;
+    height: auto;
     padding: 20px;
     color: '#000';
-    background-image: url('./images/backgroundimage.png');
+    /* background-image: url('./images/backgroundimage.jpg'); */
   }
   
   .App-title {
