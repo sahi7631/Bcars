@@ -1,8 +1,8 @@
 import React from 'react';
-import CityContainer from './CityContainer';
+import EarnWithUsContainer from './EarnWithContainer';
 
-export default class City extends React.PureComponent {
+export default class EarnWithUs extends React.PureComponent {
   render() {
-      return <CityContainer {...this.props} />
+      return <EarnWithUsContainer {...this.props} />
   }
 }

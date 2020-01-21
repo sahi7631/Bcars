@@ -17,7 +17,7 @@ class SearchContainer extends SearchContainerAbstract {
 
     render() {
         return (
-            <React.Fragment style = {{ backgroundColor: '#eee'}}>
+            <React.Fragment >
                 <div style={{display: 'flex', justifyContent: 'flex-start', marginTop: '30px'}}>
                     <div>
                         <Select defaultValue="Jaipur" style={{ width: 100 }} onChange={this.handleChange}>

@@ -13,7 +13,7 @@ class CityContainer extends CityContainerAbstract {
     }
     render() {
         return (
-            <div style={{ display: 'flex', justifyContent: 'space-around', marginTop: '10px' }}>
+            <div style={{ display: 'flex', justifyContent: 'space-around', marginTop: '10px', borderBottom: '2px solid #eee' , paddingBottom: '30px'}}>
                 <div style = {{ border: '2px solid #eee', padding: '20px', boxSizing: 'border-box', boxShadow: '5px 5px 5px #ccc'}}>
                   <img src={city1} style = {{height: '150px'}} />
                 </div>

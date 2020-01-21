@@ -9,7 +9,7 @@ class WhyUsContainer extends WhyUsContainerAbstract {
     render() {
         return (
             <div>
-                <div className="container-fluid" style={{ display: 'flex' }}>
+                <div className="container-fluid" style={{ display: 'flex',  borderBottom: '2px solid #eee' , paddingBottom: '30px' }}>
                     <div id="myCarousel" className="carousel slide" data-ride="carousel">
 
                         <ol className="carousel-indicators">

@@ -7,7 +7,7 @@ class WorkContainer extends WorkContainerAbstract {
     }
     render() {
         return (
-            <div style = {{ marginTop: '30px', padding: '20px'}}>
+            <div style = {{ marginTop: '30px', padding: '20px',  borderBottom: '2px solid #eee' , paddingBottom: '30px'}}>
                 <h1>How it Work</h1>
                 <div style = {{display: 'flex' , justifyContent: 'space-around'}}>
                     <div>
