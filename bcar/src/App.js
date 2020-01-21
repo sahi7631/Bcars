@@ -4,6 +4,7 @@ import Header from './container/Header';
 import Search from './container/SearchContainer';
 import WhyUs from './container/WhyUs';
 import Work from './container/Works';
+import City  from './container/City';
 import Subscribe from './container/Subscribe';
 import Footer from './container/Footer';
 
@@ -18,6 +19,7 @@ class App extends Component {
         </header>
         <WhyUs></WhyUs>
         <Work></Work>
+        <City></City>
         <Subscribe></Subscribe>
         <Footer></Footer>
       </div>
