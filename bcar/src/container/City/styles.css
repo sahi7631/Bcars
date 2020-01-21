@@ -1,0 +1,18 @@
+.CityContainer
+{
+    display: flex;
+    justify-content: space-around;
+    border-bottom: 2px solid #eee;
+    padding: 20px;
+}
+.CityContainerCard 
+{
+    border: '2px solid #eee';
+    padding: '20px';
+    box-sizing: border-box;
+    box-shadow: 5px 5px 5px #ccc;
+    padding: 20px;
+}
+.ImgContainer {
+    height: 150px
+}

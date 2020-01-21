@@ -9,7 +9,7 @@ class SubscribeContainer extends SubscribeContainerAbstract {
     }
     render() {
         return (
-            <div style={{ display: 'flex', justifyContent: 'space-around', marginTop: '40px' }}>
+            <div style={{ display: 'flex', justifyContent: 'space-around', marginTop: '40px', padding: '30px' }}>
                 <div>
                     <h2>Subscribe Us </h2>
                     <p> Subscribe Tripiing to get latest offers and deals to day .</p>
