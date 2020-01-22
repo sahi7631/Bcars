@@ -1,5 +1,4 @@
 import React from 'react';
-import { Input, Button, Icon } from 'antd';
 import CityContainerAbstract from './CityContainerAbstract';
 import city1 from '../../images/city1.png';
 import city2 from '../../images/city2.png';
@@ -15,7 +14,8 @@ class CityContainer extends CityContainerAbstract {
     }
     render() {
         return (
-            <div className = "CityContainer">
+          <div className = "container-wapper">
+            <div className = "container CityContainer">
                 <div className = "CityContainerCard">
                   <img src={city1} className = "ImgContainer"/>
                 </div>
@@ -32,6 +32,7 @@ class CityContainer extends CityContainerAbstract {
                   <img src={city5} className = "ImgContainer" />
                 </div>
             </div>
+          </div>
         )
     }
 }

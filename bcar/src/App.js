@@ -4,26 +4,44 @@ import Header from './container/Header';
 import Search from './container/SearchContainer';
 import WhyUs from './container/WhyUs';
 import Work from './container/Works';
-import City  from './container/City';
+import City from './container/City';
 import EarnWithUs from './container/EarnWithUs';
 import Subscribe from './container/Subscribe';
 import Footer from './container/Footer';
+import Mobile from './container/Mobile';
 
 
 class App extends Component {
   render() {
     return (
       <div className="App">
-        <header className="App-header" style = {{ borderBottom: '2px solid #eee' , paddingBottom: '20px', marginBottom: '10px'}}>
+        <div>
           <Header></Header>
+        </div>
+        <div>
           <Search></Search>
-        </header>
-        <WhyUs></WhyUs>
-        <Work></Work>
-        <City></City>
-        <EarnWithUs></EarnWithUs>
-        <Subscribe></Subscribe>
-        <Footer></Footer>
+        </div>
+        <div>
+          <WhyUs></WhyUs>
+        </div>
+        <div>
+          <Work></Work>
+        </div>
+        <div>
+          <City></City>
+        </div >
+        <div>
+          <EarnWithUs></EarnWithUs>
+        </div>
+        <div>
+          <Mobile></Mobile>
+        </div>
+        <div>
+          <Subscribe></Subscribe>
+        </div>
+        <div>
+          <Footer></Footer>
+        </div>
       </div>
     );
   }

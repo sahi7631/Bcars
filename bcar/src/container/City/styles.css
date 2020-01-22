@@ -1,8 +1,10 @@
+.container-wapper {
+    border-bottom: 2px solid #eee;
+}
 .CityContainer
 {
     display: flex;
     justify-content: space-around;
-    border-bottom: 2px solid #eee;
     padding: 20px;
 }
 .CityContainerCard 

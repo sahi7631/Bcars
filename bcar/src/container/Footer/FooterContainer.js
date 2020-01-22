@@ -1,7 +1,8 @@
 import React from 'react';
 import { Icon } from 'antd';
 import FooterContainerAbstract from './FooterContainerAbstract';
-import "./styles.css"
+import "./styles.css";
+import logo from '../../images/logo.png';
 
 class FooterContainer extends FooterContainerAbstract {
     constructor(props) {
@@ -9,12 +10,12 @@ class FooterContainer extends FooterContainerAbstract {
     }
     render() {
         return (
-            <div className="contaier-fluid Footercontainer">
+            <div className="contaier-fluid footercontainer">
                 <footer id="FooterWraper" data-track-component="Footer">
                     <nav className="footer_Nav">
                         <div className="gsc_container">
-                            <div>
-                               <h1 className = "logo"> LOGO </h1>
+                            <div style = {{ textAlign: 'center', paddingBottom: '30px'}}>
+                               <img src = {logo}  style = {{ height: '70px'}}/>
                             </div>
                             <div>
                                 <div style={{ display: 'flex', flexDirection: 'row', justifyContent: 'space-around' }}>
@@ -32,7 +33,7 @@ class FooterContainer extends FooterContainerAbstract {
                                     </ul>
                                 </div>
                             </div>
-                            <div className="title"  className = "term">All right reserved to Tripiing Private Limited</div>
+                            <div className = "term">All right reserved to Tripiing Private Limited</div>
                         </div>
                     </nav>
                 </footer>

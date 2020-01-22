@@ -1,5 +1,4 @@
 import React from 'react';
-import { Input, Button, Icon } from 'antd';
 import AboutContainerAbstract from './AboutContainerAbstract';
 import Header from '../Header';
 

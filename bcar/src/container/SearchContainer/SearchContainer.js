@@ -17,7 +17,7 @@ class SearchContainer extends SearchContainerAbstract {
 
     render() {
         return (
-            <React.Fragment >
+            <div className = "container">
                 <div style={{display: 'flex', justifyContent: 'flex-start', marginTop: '30px'}}>
                     <div>
                         <Select defaultValue="Jaipur" style={{ width: 100 }} onChange={this.handleChange}>
@@ -46,7 +46,7 @@ class SearchContainer extends SearchContainerAbstract {
                         </div>
                     </div>
                 </div>
-            </React.Fragment>
+            </div>
         )
     }
 }
